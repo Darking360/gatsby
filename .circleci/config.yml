@@ -314,11 +314,13 @@ workflows:
           requires:
             - lint
             - unit_tests_node8
+            - bootstrap
       - unit_tests_node12:
           <<: *ignore_docs
           requires:
             - lint
             - unit_tests_node8
+            - bootstrap
       - unit_tests_www
       - integration_tests_long_term_caching:
           <<: *e2e-test-workflow
