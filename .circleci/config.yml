@@ -304,8 +304,6 @@ workflows:
       - bootstrap
       - unit_tests_node10:
           <<: *ignore_docs
-          requires:
-            - bootstrap
   www_deploy:
     triggers:
       - schedule:
